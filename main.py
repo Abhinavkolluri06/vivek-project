@@ -16,6 +16,12 @@ def convert_html_to_pdf(input_file, output_file):
     except Exception as e:
         print(f"Error during conversion: {e}")
 
-# Example usage
-convert_docx_to_pdf('vivek.docx', 'output_docx_to_pdf.pdf')
-convert_html_to_pdf('index.html', 'output_html_to_pdf.pdf')
+print("1.ENTER 1 FOR DOCX TO PDF")
+print("2.ENTER 2 FOR HTML TO PDF")
+choice = input("")
+if choice == "1":
+    convert_docx_to_pdf('vivek.docx', 'output_docx_to_pdf.pdf')
+elif choice == "2":
+    convert_html_to_pdf('.html', 'output_html_to_pdf.pdf')
+else:
+    print("Wrong Input")
